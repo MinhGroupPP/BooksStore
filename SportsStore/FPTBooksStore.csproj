@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.5">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Picture\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Image\Book1.png" />
+    <None Include="wwwroot\Image\Book2.jpg" />
+    <None Include="wwwroot\Image\Book3.jpeg" />
+    <None Include="wwwroot\Image\Book4.jpg" />
+    <None Include="wwwroot\Image\Book5.jpg" />
+    <None Include="wwwroot\Image\Book6.jpeg" />
+    <None Include="wwwroot\Image\Book7.jpeg" />
+    <None Include="wwwroot\Picture\Login.jpg" />
+  </ItemGroup>
+
+</Project>

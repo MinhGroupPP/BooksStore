@@ -1,0 +1,63 @@
+﻿@model LoginModel
+@{ Layout = null; }
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>FPT Books Store</title>
+      
+        <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css?h=41f7d7846d7d77d06b72b93e8e54a0c6" />
+        <link rel="stylesheet" href="https://cdn.reflowhq.com/v2/toolkit.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/assets/css/styles.min.css?h=f7507586bf5e5e8c232093d9d64136e8" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
+      
+    </head>
+    
+    <body>
+      
+    <div class="bg-dark text-white text-center p-2">
+        <span class="navbar-brand ml-2">FPT BOOKS STORE</span>
+    </div>
+    <div class="container" style="display: flex;justify-content: center; align-items: center; text-align: center; min-height: 70vh;">
+        
+        <div class="d-flex flex-column justify-content-center" id="login-box" style="margin: 0">
+            <div class="text-danger" asp-validation-summary="All"></div>
+
+            <form asp-action="Login" asp-controller="Account" id="account" method="post" style="height: max-content; width: 500px">
+                <input type="hidden" asp-for="ReturnUrl" />
+                <div class="login-box-header">
+                <h4 style="
+                      color: rgb(139, 139, 139);
+                      margin-bottom: 0px;
+                      font-weight: 400;
+                      font-size: 27px;">
+                        Login
+                </h4>
+            </div>
+                <div class="form-group" >
+                    <label asp-for="Name"></label>
+                    <div asp-validation-for="Name" class="text-danger"></div>
+                <input asp-for="Name" class="form-control" 
+                    style="margin-top: 10px" required="" placeholder="UserName" minlength="6" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Password"></label>
+                    <div asp-validation-for="Password" class="text-danger"></div>
+                <input asp-for="Password" type="password" class="form-control" 
+                    style="margin-top: 10px" required="" placeholder="Password" minlength="6" />
+                </div>
+                <div class="submit-row" style="margin-bottom: 8px; padding-top: 0px">
+                    <button class="btn btn-primary d-block box-shadow w-100" id="submit-id-submit" type="submit">
+                        Login
+                    </button>
+                </div>
+                @* <button class="btn btn-primary text-center mt-2" type="submit" >Log In</button>*@
+            </form>
+        </div>
+    </div>
+    </body>
+</html>
+
