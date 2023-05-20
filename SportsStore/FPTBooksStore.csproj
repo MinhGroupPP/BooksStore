@@ -34,4 +34,10 @@
     <None Include="wwwroot\Picture\Login.jpg" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Models\IdentitySeedData.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>

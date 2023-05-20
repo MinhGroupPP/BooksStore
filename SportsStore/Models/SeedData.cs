@@ -26,7 +26,7 @@ namespace SportsStore.Models
                     new Product
                     {
                         Name = "One Piece - Dao Hai Tac",
-                        Image ="",
+                        
                         Author = " Oda Eiichiro",
                         Description = "One Piece (ワンピース Wan Pīsu?), once published in Vietnam under the name Pirate Island is a manga series for teenagers by author Oda Eiichiro, serialized in Weekly Shōnen Jump magazine. It was first published in issue 34 on July 19, 1997. The tankōbon version of the manga was published by Shueisha with the first volume on December 24, 1997. One Piece follows the journey of Monkey D. Luffy - the captain. of the Straw Hat Pirates and his comrades. Luffy searches the mysterious sea where the world's greatest treasure, One Piece, is kept, with the goal of becoming the New Pirate King.",
                         Category = "Manga",

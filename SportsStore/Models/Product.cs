@@ -13,7 +13,7 @@ namespace SportsStore.Models
 
 
         [Required(ErrorMessage = "Please enter a category")]
-        public string Category { get; set; } 
+        public string Category { get; set; } = String.Empty;
 
         [Required(ErrorMessage = "Please enter a author")]
         public string Author { get; set; } = String.Empty;
@@ -26,7 +26,7 @@ namespace SportsStore.Models
         [Column(TypeName = "decimal(8, 2)")]
         public decimal Price { get; set; }
 
-        public string Image { get; set; }
+        public string Image { get; set; } 
 
 
     }
